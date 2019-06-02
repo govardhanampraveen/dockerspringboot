@@ -15,7 +15,7 @@ public class LoginController {
         InetAddress ip;
         try {
             ip = InetAddress.getLocalHost();
-            return ip.getHostAddress();
+            return ip.getHostName();
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
